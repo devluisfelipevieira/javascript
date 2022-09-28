@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        p{
+            color: aqua; /* Comentario em CSS*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        /*window.alert('Minha primeira mensagem')// alerta
+        window.confirm('Está gostando de JS?')// alerta com 'ok'
+        var nome = window.prompt('Qual é seu nome?')// abre uma caixa para escrever
+        window.alert('É um grande prazer te conhecer, '+ nome)*/
+        var n1 = Number.parseFloat(window.prompt('Digite um numero'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))//Pode usar também apenas "Number" e o JS decide se é float ou int
+        var s = n1 + n2
+        window.alert('A soma dos valores é '+ s) // + faz concatenação quando trata de string 
+        window.alert(`A soma de ${n1} e ${n2} é ${s}`) 
+    </script>
+</body>
+</html>  

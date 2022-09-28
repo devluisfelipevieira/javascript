@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>De qual país você é?</h1>
+    <input type="text" name="nacio" id="nacio">
+    <input type="button" value="Confirmar" onclick="confpais()">
+    <div id = 'res'>
+    </div>
+    <script>
+        function confpais(){
+            var nac = document.getElementById('nacio')
+            var res = document.getElementById('res')
+            res.innerHTML = (`Vivendo em ${nac.value}`)
+            if (nac.value == 'Brasil'){
+                res.innerHTML += (` Você é brasileiro`)
+            }
+            else{
+                res.innerHTML += (` Você é Estrangeiro`)
+            res
+            }
+}
+    </script>
+  
+    
+</body>
+</html>
